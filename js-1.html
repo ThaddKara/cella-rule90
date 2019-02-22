@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>cella-rule90</title>
+  <!----<link rel="stylesheet" href="..cella-rule90/assets/styles.css">-->
+</head>
+
+<body>
+  <h1>Zakaria Kara cs335 cella-rule90</h1>
+  <canvas id="grid" width="800" height="800"></canvas>
+  <p id="dummy"></p>
+</body>
+<script src="../cella-rule90/assets/draw-stuff.js"></script>
+<script>
+  var canvas = document.getElementById("grid");
+  var context = canvas.getContext("2d");
+  // Fill initial row
+  fill_first(context);
+  // Fill rows
+  fill_rows( context );
+</script>
+
+</html>
