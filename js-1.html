@@ -2,17 +2,33 @@
 <html>
 
 <head>
-  <title>ZkarCS439 cella-rule90</title>
-  <!----<link rel="stylesheet" href="..cella-rule90/assets/styles.css">-->
+  <title>ZkarCS335 cella-rule90</title>
+  <link rel="stylesheet" href="../cella-rule90/button.css">
 </head>
 
 <body>
-  <h1>Zakaria Kara cs335 cella-rule90</h1>
+  <div>
+    <h1>Zakaria Kara CS335 cella-rule90</h1>
+    <button id = "btn" class="button" onmouseover="ChangeText()" onmouseout="ChangeBack()" onclick="Redirect()">Live Example</button>
+  </div>
   <canvas id="grid" width="800" height="800"></canvas>
   <p id="dummy"></p>
 </body>
 <script src="../cella-rule90/assets/draw-stuff.js"></script>
 <script>
+  // ChangeBack
+  function ChangeBack(){
+    document.getElementById("btn").style.background = '#656565'
+  }
+  // ChangeText
+  function ChangeText(){
+    document.getElementById("btn").style.background = '#000000';
+  }
+  // button redirect
+  function Redirect() {
+    window.location.href = "https://s3-us-west-1.amazonaws.com/zkar-cs335-cellarule90/js-1.html";
+  }
+
   var canvas = document.getElementById("grid");
   var context = canvas.getContext("2d");
   // Fill initial row
