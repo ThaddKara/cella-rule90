@@ -1,5 +1,6 @@
-// https://github.com/ThaddKara/cella-rule45
+// https://github.com/ThaddKara/cella-rule90
 // Zakaria Kara CS 335 Assignment 1
+// Zkara@csu.fullerton.edu
 
 // =====================================================  draw_grid ====
 function draw_grid(rctx, rminor, rmajor, rstroke, rfill) {
